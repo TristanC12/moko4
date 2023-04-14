@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moko</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, diet, cuisine, eat">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+  <script src="responsive.js"></script>
+</head>
+
+<body>
+  <header class="header-area">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="img/food.gif" alt="food gif"></a></div>
+        <div class="logo-text"><a href="index.html">Moko</a></div> 
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="diet.html" class="active">Diet</a></li>
+            <li><a href="region.html">Region</a></li>
+            <li><a href="search.html" class="search"><img src="icons/search-icon.png"></a></li>
+          </ul>
+          <button class="nav-toggler" onclick="myFunction()"></button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="diet-banner">
+      <div class="content">
+          <div class="info">
+            <h1>Diet</h1>
+            <h2>a balanced diet is a cookie in each hand</h2>
+          </div>
+          <div class="filters">
+            <a href="#recipe-list" class="filter" id="waffles" onmousedown="showAll('diary free')">diary-free</a>
+            <a href="#recipe-list" class="filter" id="pancakes" onmousedown="showAll('vegan')">vegan</a>
+            <a href="#recipe-list" class="filter" id="crepes" onmousedown="showAll('pescatarian')">pescatarian</a>
+            <a href="#recipe-list" class="filter" id="eggs" onmousedown="showAll('low carbs')">low carbs</a>
+            <a href="#recipe-list" class="filter" id="french-toast" onmousedown="showAll('healthy')">healthy</a>
+            <a href="#recipe-list" class="filter" id="bread" onmousedown="showAll('vegetarian')">vegetarian</a>
+            <a href="#recipe-list" class="filter" id="bread" onmousedown="showAll('glutten free')">glutten free</a>
+            <a href="#recipe-list" class="filter" id="bread" onmousedown="showAll('comfort food')">comfort food</a>
+            <a href="#recipe-list" class="filter" id="bread" onmousedown="showAll('kid friendly')">kid-friendly</a>   
+          </div>
+        </div>
+    </section>
+    <p class="prompt"> Is today cheat day? Pick your desired diet !</p>
+    <section id="recipe-list">
+      
+    </section>
+
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <p class="end">Design by <span> Client Cafe</span></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="responsive.js"></script>
+</body>
+
+</html>

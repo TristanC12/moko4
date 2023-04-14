@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moko</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, diet, cuisine, eat">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+  <script src="responsive.js"></script>
+</head>
+
+<body>
+  <header class="header-area">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="img/food.gif" alt="food gif"></a></div>
+        <div class="logo-text"><a href="index.html">Moko</a></div> 
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html" >Dinner</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="region.html" class="active">Region</a></li>
+            <li><a href="search.html" class="search"><img src="icons/search-icon.png"></a></li>
+          </ul>
+          <button class="nav-toggler" onclick="myFunction()"></button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="region-banner">
+      <div class="content">
+          <div class="info">
+            <h1>Region</h1>
+            <h2>travel the world from your kitchen</h2>
+          </div>
+          <div class="filters">
+            <a href="#recipe-list" class="filter" onmousedown="showAll('Fusion')">Fusion</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('Indigenous')">Indigenous</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">Asia</a>
+            <a href="#regionFilters" class="filter"  onmousedown="loadFilters(event)">Africa</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">North America</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">South America</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">Central America</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">Europe</a>
+            <a href="#regionFilters" class="filter" onmousedown="loadFilters(event)">Caribbean</a>
+          </div>            
+        </div>
+    </section>
+
+    <section id="regionFilters">
+
+      <div class="region" id="Caribbean">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Dominican')">Dominican</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Puerto Rican')">Puerto Rican</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Caribbean')">Caribbean</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Jamaican')">Jamaican</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Haitian')">Haitian</a>
+      </div>
+
+      <div class="region" id="Europe">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('British')">British</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Italian')">Italian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Swedish')">Swedish</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Greek')">Greek</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('German')">German</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('French')">French</a>    
+      </div>
+
+      <div class="region" id="Central America">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Mexican')">Mexican</a>
+      </div>
+      <div class="region" id="South America">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Venezuelan')">Venezuelan</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Brazillian')">Brazillian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Peruvian')">Peruvian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Latin American')">Latin American</a>
+      </div>
+      <div class="region" id="North America">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('American')">American</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Hawaiian')">Hawaiian</a>
+      </div>
+
+      <div class="region" id="Africa">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('African')">African</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('South African')">South African</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('West African')">West African</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Ethiopian')">Ethiopian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Kenyan')">Kenyan</a>
+      </div>
+      <div class="region" id="Asia">
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Thai')">Thai</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Middle Eastern')">Middle Eastern</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Japanese')">Japanese</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Korean')">Korean</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Chinese')">Chinese</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Vietnamese')">Vietnamese</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Lebanese')">Lebanese</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Loatian')">Loatian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Filipino')">Filipino</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Indian')">Indian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Persian')">Persian</a>
+        <a href="#recipe-list" class="filter" onmousedown="showAll('Taiwanese')">Taiwanese</a> 
+      </div>
+      <p class="prompt">Where will your kitchen adventure take you today? Select a region to begin your voyage !</p> 
+    </section>
+
+    <section id="recipe-list">
+
+    </section>
+
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <p class="end">Design by <span> Client Cafe</span></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="responsive.js"></script>
+</body>
+
+</html>

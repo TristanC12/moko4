@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moko</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, diet, cuisine, eat">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+  <script src="responsive.js"></script>
+</head>
+
+<body onload="showAllCategory('dinner')">
+  <header class="header-area">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="img/food.gif" alt="food gif"></a></div>
+        <div class="logo-text"><a href="index.html">Moko</a></div>
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html" class="active">Dinner</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="region.html">Region</a></li>
+            <li><a href="search.html" class="search"><img src="icons/search-icon.png"></a></li>
+          </ul>
+          <button class="nav-toggler" onclick="myFunction()"></button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="dinner-banner">
+      <div class="content">
+          <div class="info">
+            <h1>Dinner</h1>
+            <h2>the best memories are made around the dinner table</h2>
+          </div>
+          <div class="filters">
+            <a href="#recipe-list" class="filter" onmousedown="showAll('steak')">steak</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('meat loaf')">meat loaf</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('pork chops')">pork chops</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('30 minute meals')">30 minute meals</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('stew')">stew</a>
+            <a href="#recipe-list" class="filter" onmousedown="showAll('one pot meals')">one pot meals</a>
+          </div>
+        </div>
+    </section>
+
+    <section id="recipe-list">
+    
+    </section>
+
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <p class="end">Design by <span> Client Cafe</span></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="responsive.js"></script>
+</body>
+
+</html>

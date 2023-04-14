@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moko</title>
+  <meta name="keywords" content="recipes, food, meals, breakfast, lunch, dinner, diet, cuisine, eat">
+  <meta name="description" content="">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="responsive.css" rel="stylesheet" type="text/css" />
+  <script src="responsive.js"></script>
+</head>
+
+<body id="homepage" onload="loadHomePage('random'); loadHomePage('pasta'); loadHomePage('dessert'); loadHomePage('salad');">
+  <header class="header-area">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-image"><a href="index.html"><img src="img/food.gif" alt="food gif"></a></div>
+        <div class="logo-text"><a href="index.html">Moko</a></div> 
+      </div>
+      <div class="navbar-area">
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="region.html">Region</a></li>
+            <li><a href="search.html" class="search"><img src="icons/search-icon.png"></a></li>
+          </ul>
+          <button class="nav-toggler" onclick="myFunction()"></button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="home"><!--onload="loadHomePage()"-->
+    <section class="banner" id="home-banner">
+      <div class="content">
+          <div class="info">
+            <h1>Lettuce <br>Eat !</h1>
+            <h2>Food may be essential as fuel for the body, but good food is fuel for the soul - Malcom Forbes</h2>
+            <p>Set out on your next kitchen adventure !</p>
+          </div>
+          <a href="#random-recipes" id="browse">Browse</a>
+        </div>
+    </section>
+    <section class="list" id="random-recipes">
+      <h1>Recipe Lotto</h1>
+      <h2>One of these recipes just might be your soulmate. Take a leap and enjoy !</h2>
+      <div id="random" loadHomePage('random');>
+        
+      </div>
+    </section>
+
+    <section class="list" id="pasta-recipes">
+      <h1>Pasta</h1>
+      <h2>Life is about exploring pasta-bilities</h2>
+      <div id="pasta">
+        
+      </div>
+    </section>
+
+    <section class="list" id="dessert-recipes">
+      <h1>Desserts</h1>
+      <h2>The best things in life are sweet</h2>
+      <div id="dessert">
+        
+      </div>
+    </section>
+
+    <section class="list" id="salad-recipes">
+      <h1>Salad</h1>
+      <h2>Nothing taste as good as healthy</h2>
+      <div id="salad">
+        
+      </div>
+    </section>
+
+    <div id="recipe-details">
+      <span class="close" onclick="closeRecipe()">&times;</span>
+      <div id="recipe-container">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="end">Design by <span>Client Cafe</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="responsive.js"></script>
+</body>
+
+</html>
